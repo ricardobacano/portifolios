@@ -29,19 +29,19 @@
 <h2 align="center">Redes Socias</h2>
 
 <p align="center">
-    <a href="https://www.linkedin.com/in/ricardo-quer-filho?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+    <a href="https://www.linkedin.com/in/ricardo-quer-filho?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-    <a href="mailto:ricardoquer14@gmail.com" target="_blank">
+    <a href="mailto:ricardoquer14@gmail.com" target="blank">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
   </a>
-    <a href="https://discord.com/users/350047340666814479" target="_blank">
+    <a href="https://discord.com/users/350047340666814479" target="blank">
     <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/>
   </a>
-    <a href="https://www.instagram.com/ricardo_fiih?igsh=MWR6bjRrYzR4cXQzdw==" target="_blank">
+    <a href="https://www.instagram.com/ricardo_fiih?igsh=MWR6bjRrYzR4cXQzdw==" target="blank">
   <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
-    <a href="https://www.inf.ufpr.br/rqnf22/" target="_blank">
+    <a href="https://www.inf.ufpr.br/rqnf22/" target="blank">
   <img src="https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website"/>
 </a>
 
