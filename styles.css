@@ -2,19 +2,28 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     height: 100vh;
+    background-color: #1a1a1a; /* Fundo geral escuro */
+    color: #e0e0e0; /* Texto claro */
 }
 
 .navbar {
-    background-color: #333;
+    position: fixed; /* Torna a navbar fixa no topo */
+    top: 0; /* Posiciona no topo */
+    width: 100%; /* Faz com que ocupe toda a largura da página */
+    z-index: 1000; /* Garante que ela fique acima de outros elementos */
+    background-color: #222; /* Cor de fundo sólida */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra sutil */
 }
+
+
 
 .navbar .nav-link, 
 .navbar .navbar-brand {
-    color: #fff !important;
+    color: #e0e0e0 !important; /* Links claros */
 }
 
 .navbar .nav-link:hover {
-    color: #ddd !important;
+    color: #f0f0f0 !important; /* Links ao passar o mouse */
 }
 
 .navbar-logo {
@@ -25,12 +34,13 @@ body {
 .section {
     padding: 60px 20px;
     text-align: center;
-    color: #fff;
 }
 
 .section h2 {
     font-weight: 600;
     margin-bottom: 40px;
+    color: #ffffff; /* Títulos brancos */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
 }
 
 .section p {
@@ -38,10 +48,11 @@ body {
     font-size: 18px;
     max-width: 800px;
     margin: 0 auto;
+    color: #d3d3d3; /* Texto claro */
 }
 
 #sobre {
-    background: rgba(0, 0, 0, 0.6);
+    background: #333; /* Fundo cinza-escuro */
     padding: 80px 20px;
     border-radius: 10px;
     max-width: 800px;
@@ -57,38 +68,118 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #ffffff; /* Texto branco */
 }
 
 .section.bg-light {
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #2b2b2b; /* Fundo cinza médio */
 }
 
 #contatos {
-    color: #fff;
-    text-align: justify;
+    background-color: #222; /* Fundo da seção de contatos */
 }
 
-.contact-info {
-    margin-top: 20px;
-    font-size: 18px;
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
-.contact-info a {
-    color: #333;
+.contact-box {
+    background-color: #333; /* Fundo cinza escuro */
+    border: 1px solid #444; /* Borda sutil */
+    border-radius: 12px;
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); /* Sombra mais escura */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.7); /* Destaque ao passar o mouse */
+}
+
+.contact-box p {
+    font-size: 1rem;
+    color: #d3d3d3; /* Texto claro */
+    margin: 0;
+}
+
+.contact-box a {
+    color: #e0e0e0; /* Links claros */
     text-decoration: none;
+    font-weight: 600;
 }
 
-.contact-info a:hover {
-    color: #555;
+.contact-box a:hover {
+    color: #ffffff; /* Links mais claros ao passar o mouse */
+}
+
+#experiencia {
+    background-color: #2b2b2b; /* Fundo cinza médio */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.experience-block {
+    background: #333; /* Fundo cinza escuro */
+    border-radius: 12px;
+    padding: 30px;
+    width: 320px;
+    text-align: left;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.7); /* Destaque ao passar o mouse */
+}
+
+.icon-box {
+    background-color: #444; /* Fundo do ícone cinza mais claro */
+    border-radius: 50%; /* Forma circular */
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.icon-box img {
+    width: 30px;
+    height: auto;
+}
+
+.experience-title {
+    font-size: 1.2rem;
+    color: #ffffff; /* Título branco */
+    font-weight: bold;
+    margin: 0;
+}
+
+.experience-block p {
+    font-size: 1rem;
+    color: #d3d3d3; /* Texto claro */
+    margin: 10px 0 0 0;
 }
 
 #back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #333;
+    background-color: #444; /* Fundo cinza escuro */
     color: #fff;
     padding: 10px 20px;
     border-radius: 50px;
@@ -96,86 +187,15 @@ body {
     display: none;
     font-size: 18px;
     z-index: 1000;
-}
-
-.contact-box {
-background-color: #fff;
-border: 1px solid #ddd;
-border-radius: 10px;
-padding: 20px;
-margin: 20px 0;
-transition: box-shadow 0.3s ease;
-}
-
-.experience-list {
-list-style: none;
-padding: 0;
-text-align: center;
-}
-
-.experience-list li {
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 20px;
-background-color: #f8f9fa;
-border: 1px solid #ddd;
-border-radius: 10px;
-padding: 15px;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.experience-list {
-list-style: none;
-padding: 0;
-text-align: center;
-}
-
-.experience-list li {
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 20px;
-background-color: #f8f9fa;
-border: 1px solid #ddd;
-border-radius: 10px;
-padding: 15px;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experience-list li:hover {
-transform: translateY(-5px);
-box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.2);
-}
-
-.icon-box {
-background-color: #333;
-border-radius: 50%;
-padding: 10px;
-margin-right: 15px;
-}
-
-.icon-box img {
-height: 40px;
-width: 40px;
-}
-
-.experience-text {
-font-size: 18px;
-color: #333;
-}
-
-.experience-text strong {
-color: #333;
-font-weight: 700;
-}
-.contact-box:hover {
-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 .contact-box img {
-margin-bottom: 15px;
+    filter: invert(1); /* Deixa os ícones brancos */
+    opacity: 0.8; /* Um pouco transparente para suavizar */
+    transition: opacity 0.3s ease;
 }
 
-.contact-box p {
-margin: 0;
+.contact-box img:hover {
+    opacity: 1; /* Ícones ficam totalmente visíveis ao passar o mouse */
 }

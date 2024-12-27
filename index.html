@@ -9,108 +9,133 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">
-        <img src="https://imgs.search.brave.com/nk7iqR9irk68Lvwr-0ep0tlmwc6rk5379-p53S_yCjg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zaWMu/dWZwci5ici93cC1j/b250ZW50L3RoZW1l/cy93cHVmcHJfenVy/YjZfc2ljL2ltYWdl/cy9sb2dvX3VmcHJf/YnJhbmNhX3Jlc3Bv/bnNpdm8ucG5n" alt="UFPR Logo" class="navbar-logo">
-    </a>    
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#sobre">Sobre</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#experiencia">Experiência</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contatos">Contatos</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://imgs.search.brave.com/nk7iqR9irk68Lvwr-0ep0tlmwc6rk5379-p53S_yCjg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zaWMu/dWZwci5ici93cC1j/b250ZW50L3RoZW1l/cy93cHVmcHJfenVy/YjZfc2ljL2ltYWdl/cy9sb2dvX3JfcHJf/YnJhbmNhX3Jlc3Bv/bnNpdm8ucG5n" alt="UFPR Logo" class="navbar-logo">
+        </a>    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home" data-lang-pt="Home" data-lang-en="Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre" data-lang-pt="Sobre" data-lang-en="About">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experiencia" data-lang-pt="Experiência" data-lang-en="Experience">Experiência</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contatos" data-lang-pt="Contatos" data-lang-en="Contacts">Contatos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="setLanguage('pt')">
+                        <img src="https://img.icons8.com/color/48/brazil.png" alt="Brazil Flag" style="width: 24px;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="setLanguage('en')">
+                        <img src="https://img.icons8.com/color/48/usa.png" alt="USA Flag" style="width: 24px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
 
-<div id="home-section">
-    <div id="sobre">
-        <h2>Sobre</h2>
-        <p>
-            Olá, meu nome é Ricardo Quer do Nascimento Filho, sou estudante de Informática Biomédica na Universidade Federal do Paraná. 
-            Tenho 20 anos, nascido Curitiba - Paraná.
-        </p>
+
+    <div id="home-section">
+        <div id="sobre">
+            <h2 data-lang-pt="Sobre" data-lang-en="About">Sobre</h2>
+            <p data-lang-pt="Olá, meu nome é Ricardo Quer do Nascimento Filho, sou estudante de Informática Biomédica na Universidade Federal do Paraná. Tenho 20 anos, nascido em Curitiba - Paraná."
+               data-lang-en="Hello, my name is Ricardo Quer do Nascimento Filho, I am a Biomedical Informatics student at the Federal University of Paraná. I am 20 years old, born in Curitiba - Paraná.">
+               Olá, meu nome é Ricardo Quer do Nascimento Filho, sou estudante de Informática Biomédica na Universidade Federal do Paraná. Tenho 20 anos, nascido em Curitiba - Paraná.
+            </p>
+        </div>
+    </div>
+
+    <section id="experiencia">
+        <h2 data-lang-pt="Experiência com Linguagens" data-lang-en="Experience with Languages">Experiência com Linguagens</h2>
+        <div class="experience-container">
+            <div class="experience-block">
+                <div class="icon-box">
+                    <img src="https://img.icons8.com/officel/80/000000/php-logo.png" alt="PHP Icon">
+                </div>
+                <strong class="experience-title" data-lang-pt="Back-Web:" data-lang-en="Back-End:">Back-Web:</strong>
+                <p data-lang-pt="Back-End web, focado na linguagem PHP com Laravel, utilizando MySQL." 
+                   data-lang-en="Back-End web focused on PHP with Laravel, using MySQL.">
+                   Back-End web, focado na linguagem PHP com Laravel, utilizando MySQL.
+                </p>
+            </div>
+            <div class="experience-block">
+                <div class="icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git Icon">
+                </div>
+                <strong class="experience-title" data-lang-pt="Git & GitHub:" data-lang-en="Git & GitHub:">Git & GitHub:</strong>
+                <p data-lang-pt="Controle de versão e colaboração em projetos de software." 
+                   data-lang-en="Version control and collaboration in software projects.">
+                   Controle de versão e colaboração em projetos de software.
+                </p>
+            </div>
+            <div class="experience-block">
+                <div class="icon-box">
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/react.png" alt="React Native Icon">
+                </div>
+                <strong class="experience-title" data-lang-pt="Mobile:" data-lang-en="Mobile:">Mobile:</strong>
+                <p data-lang-pt="Desenvolvimento Mobile na linguagem TypeScript com React-Native." 
+                   data-lang-en="Mobile development in TypeScript with React-Native.">
+                   Desenvolvimento Mobile na linguagem TypeScript com React-Native.
+                </p>
+            </div>
+            <div class="experience-block">
+                <div class="icon-box">
+                    <img src="https://img.icons8.com/?size=100&id=40670&format=png&color=000000" alt="Node.js Icon">
+                </div>
+                <strong class="experience-title" data-lang-pt="Outras linguagens e ferramentas:" data-lang-en="Other Languages and Tools:">Outras linguagens e ferramentas:</strong>
+                <p data-lang-pt="Node.js, C, C#." 
+                   data-lang-en="Node.js, C, C#.">
+                   Node.js, C, C#.
+                </p>
+            </div>
+        </div>    
+    </section>
+
+<div class="section" id="contatos">
+    <h2 data-lang-pt="Contatos" data-lang-en="Contacts">Contatos</h2>
+    <div class="contact-container">
+        <div class="contact-box">
+            <div class="icon-box">
+                <img src="https://img.icons8.com/ios-filled/50/333333/new-post.png" alt="Email Icon">
+            </div>
+            <p><strong data-lang-pt="Email:" data-lang-en="Email:">Email:</strong></p>
+            <p><a href="mailto:ricardo.filho@ufpr.br">ricardo.filho@ufpr.br</a></p>
+        </div>
+        <div class="contact-box">
+            <div class="icon-box">
+                <img src="https://img.icons8.com/ios-filled/50/333333/phone.png" alt="Phone Icon">
+            </div>
+            <p><strong data-lang-pt="Telefone:" data-lang-en="Phone:">Telefone:</strong></p>
+            <p><a href="https://wa.me/5541992047466" target="_blank">+55 (41) 99204-7466</a></p>
+        </div>
+        <div class="contact-box">
+            <div class="icon-box">
+                <img src="https://img.icons8.com/ios-filled/50/333333/linkedin.png" alt="LinkedIn Icon">
+            </div>
+            <p><strong data-lang-pt="LinkedIn:" data-lang-en="LinkedIn:">LinkedIn:</strong></p>
+            <p><a href="https://www.linkedin.com/in/ricardo-quer-filho" target="_blank">linkedin.com/ricardoquer</a></p>
+        </div>
+        <div class="contact-box">
+            <div class="icon-box">
+                <img src="https://img.icons8.com/ios-filled/50/333333/github.png" alt="GitHub Icon">
+            </div>
+            <p><strong data-lang-pt="GitHub:" data-lang-en="GitHub:">GitHub:</strong></p>
+            <p><a href="https://github.com/ricardobacano" target="_blank">github.com/ricardobacano</a></p>
+        </div>
     </div>
 </div>
 
-<div class="section bg-light" id="experiencia">
-    <h2 style="text-align: center; font-weight: 600;">Experiência</h2>
-    <ul class="experience-list">
-        <li>
-            <div class="icon-box">
-                <img src="https://img.icons8.com/officel/80/000000/php-logo.png" alt="PHP Icon">
-            </div>
-            <div class="experience-text">
-                <strong>Back-Web:</strong> Back-End web, focado na linguagem PHP com Laravel, utilizando MySQL.
-            </div>
-        </li>
-        <li>
-            <div class="icon-box">
-                <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git Icon">
-            </div>
-            <div class="experience-text">
-                <strong>Git & GitHub:</strong> Controle de versão e colaboração em projetos de software.
-            </div>
-        </li>
-        <li>
-            <div class="icon-box">
-                <img src="https://img.icons8.com/ultraviolet/40/000000/react.png" alt="React Native Icon">
-            </div>
-            <div class="experience-text">
-                <strong>Mobile:</strong> Desenvolvimento Mobile na linguagem TypeScript com React-Native.
-            </div>
-        </li>
-        <li>
-            <div class="icon-box">
-                <img src="https://img.icons8.com/?size=100&id=40670&format=png&color=000000" alt="Node.js Icon">
-            </div>
-            <div class="experience-text">
-                <strong>Outras linguagens e feramentas:</strong> Node.js, C, C#.
-            </div>
-        </li>
-    </ul>
-</div>
-
-<div class="section" id="contatos" style="background-color: #f8f9fa;">
-    <h2 style="color: #333; text-align: center;">Contatos</h2>
-    <div class="row justify-content-center">
-        <div class="col-md-3 text-center">
-            <div class="contact-box">
-                <img src="https://img.icons8.com/ios-filled/50/333333/new-post.png" alt="Email Icon" style="height: 50px;">
-                <p><strong>Email:</strong><br><a href="mailto:ricardo.filho@ufpr.br" style="color: #333; text-decoration: none;">ricardo.filho@ufpr.br</a></p>
-            </div>
-        </div>
-        <div class="col-md-3 text-center">
-            <div class="contact-box">
-                <img src="https://img.icons8.com/ios-filled/50/333333/phone.png" alt="Phone Icon" style="height: 50px;">
-                <p style="color: #333;"><strong>Telefone:</strong><br>(41) 92001-8364</p>
-            </div>
-        </div>
-        <div class="col-md-3 text-center">
-            <div class="contact-box">
-                <img src="https://img.icons8.com/ios-filled/50/333333/linkedin.png" alt="LinkedIn Icon" style="height: 50px;">
-                <p><strong>LinkedIn:</strong><br><a href="https://www.linkedin.com/in/ricardo-quer-filho?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color: #333; text-decoration: none;">linkedin.com/ricardoquer</a></p>
-            </div>
-        </div>
-        <div class="col-md-3 text-center">
-            <div class="contact-box">
-                <img src="https://img.icons8.com/ios-filled/50/333333/github.png" alt="GitHub Icon" style="height: 50px;">
-                <p><strong>GitHub:</strong><br><a href="https://github.com/ricardobacano" target="_blank" style="color: #333; text-decoration: none;">github.com/ricardobacano</a></p>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <div id="back-to-top">↑</div>
@@ -141,6 +166,35 @@
             return false;
         });
     });
+
+    function setLanguage(language) {
+    if (language === 'pt') {
+        // Recarrega a página em português
+        window.location.href = '?lang=pt';
+    } else if (language === 'en') {
+        // Recarrega a página em inglês
+        window.location.href = '?lang=en';
+    }
+}
+
+// Detecta o idioma na URL e traduz o conteúdo
+document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const lang = urlParams.get('lang');
+
+    if (lang === 'en') {
+        // Tradução para inglês
+        document.querySelectorAll('[data-lang-pt]').forEach(el => {
+            el.textContent = el.getAttribute('data-lang-en');
+        });
+    } else {
+        // Tradução para português (padrão)
+        document.querySelectorAll('[data-lang-en]').forEach(el => {
+            el.textContent = el.getAttribute('data-lang-pt');
+        });
+    }
+});
+
 </script>
 </body>
 </html>
